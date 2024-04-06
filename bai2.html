@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bài 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .a-nav {
+                font-size: 0.9em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .a-nav {
+                font-size: 0.6em;
+            }
+            .body{
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .a-nav {
+                font-size: 0.4em;
+            }
+            .body{
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .a-nav {
+                font-size: 0.4em;
+            }
+            .body{
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-success py-1 px-0 px-sm-5 text-light d-flex justify-content-between">
+        <div class="d-flex" style="font-size: 1em;">
+            Help
+            +098324892482
+        </div>
+        <div class="d-flex text-end" style="font-size: 1em;">
+            My accout
+            Signin
+            Create Accout
+        </div>
+    </div>
+
+    <nav style="background-color: #4ec67f; font-size: 1em;" class="navbar navbar-light navbar-expand-sm py-0">
+        <a class="text-light navbar-brand ms-1 ms-sm-5" href="">
+            <h2 style="font-size: 1.5em; margin: auto 0;">TSHOP</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li style="margin:auto 0" class="nav-item">
+                    <a href="" class="a-nav nav-link active text-light">Home</a>
+                </li>
+                <li style="margin:auto 0" class="nav-item dropdown">
+                    <a class="a-nav text-light nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        New Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="a-nav text-light dropdown-item" href="#">Menu1</a></li>
+                        <li><a class="a-nav text-light dropdown-item" href="#">Menu2</a></li>
+                    </ul>
+                </li>
+                <li style="margin:auto 0" class="nav-item dropdown">
+                    <a class="a-nav text-light nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="a-nav text-light dropdown-item" href="#">Menu1</a></li>
+                        <li><a class="a-nav text-light dropdown-item" href="#">Menu2</a></li>
+                    </ul>
+                </li>
+                <li style="margin:auto 0" class="nav-item dropdown">
+                    <a class="a-nav text-light nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="a-nav text-light dropdown-item" href="#">Menu1</a></li>
+                        <li><a class="a-nav text-light dropdown-item" href="#">Menu2</a></li>
+                    </ul>
+                </li>
+                <li style="margin:auto 0" class="nav-item">
+                    <a href="" class="a-nav nav-link active text-light">All Page Link</a>
+                </li>
+            </ul>
+            <form class="d-flex form-drop">
+                <i class="bi bi-bag-check text-light me-1 mt-1"></i>
+                <div class="dropdown">
+                    <a href="" class="a-nav text-light nav-link dropdown-toggle mt-1  me-5" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="a-nav dropdown-item" href="#">Action</a></li>
+                        <li><a class="a-nav dropdown-item" href="#">Another action</a></li>
+                        <li><a class="a-nav dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-search text-light me-5 mt-2"></i>
+            </form>
+        </div>
+    </nav>
+
+    <div style="background-color: #edeef0;" class="container-fluid px-2 py-4">
+        <div style="background-color: gainsboro;" class="container-fluid p-1">
+            <a class="text-secondary" style="text-decoration: none;" href="">Home /</a>
+            <a class="text-secondary" style="text-decoration: none;" href="">Category /</a>
+            <a class="text-secondary" style="text-decoration: none;" href="">Card </a>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-md-8 col-sm-12">
+                <div class="d-flex">
+                    <i style="font-size: 2em;" class="bi bi-bag-plus-fill me-2"></i>
+                    <p style="margin:auto 0">Shopping Cart</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex justify-content-end">
+                <div class="d-flex justify-content-center">
+                    <i style="font-size: 1.5em; margin: auto 0;" class="bi bi-arrow-left me-2"></i>
+                    <p style="margin:auto 0">Back to Shop</p>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-sm-12">
+                <div style="background-color:  #f5f5f5;" class="d-flex py-1 px-sm-5 px-0">
+                    <div class="col-5 d-flex">
+                        <p style="margin: auto 0;" class="me-3">Products</p>
+                        <p style="margin: auto 0;">Detail</p>
+                    </div>
+                    <div class="col-7 d-flex justify-content-end">
+                        <p style="margin: auto 0;" class="me-3">QNT</p>
+                        <p style="margin: auto 0;" class="me-3">Discount</p>
+                        <p style="margin: auto 0;">Total</p>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px solid gray;" class="container bg-white p2 d-flex px-4">
+                    <div class="col-6 d-flex">
+                        <img style="max-width: 50%;" src="./images/zed1.jpg" class="img-fluid" alt="...">
+                        <div style="margin:auto 0" class="col">
+                            <p style="color: rgb(168, 135, 135);" class="my-4">Denin Tshirt Black</p>
+                            <p style="font-weight: normal;" class="my-0">12 x 5N</p>
+                            <p style="font-weight: bold;">$8.80</p>
+                        </div>
+                    </div>
+                    <div style="margin: auto 0;" class="col-6 d-flex justify-content-end">
+                        <i style="font-size: 1.5em;" class="bi bi-trash me-sm-5 me-1"></i>
+                        <p style="border: 1px solid black; margin: auto 0" class="me-sm-1 me-0">2</p>
+                        <p class="me-sm-4 me-1" style="margin: auto 0;">+</p>
+                        <p style="margin: auto 0;" class="me-sm-5 me-1">0</p>
+                        <p class="me-sm-3 me-1" style="font-weight: bold; margin: auto 0;">$ 300</p>
+                    </div>
+                </div>
+                <div style="border-bottom: 1px solid gray;" class="container bg-white p2 d-flex px-4">
+                    <div class="col-6 d-flex">
+                        <img style="max-width: 50%;" src="./images/zed3.jpg class="img-fluid" alt="...">
+                        <div style="margin:auto 0" class="col">
+                            <p style="color: rgb(168, 135, 135);" class="my-4">Denin Tshirt Black</p>
+                            <p style="font-weight: normal;" class="my-0">12 x 5N</p>
+                            <p style="font-weight: bold;">$8.80</p>
+                        </div>
+                    </div>
+                    <div style="margin: auto 0;" class="col-6 d-flex justify-content-end">
+                        <i style="font-size: 1.5em;" class="bi bi-trash me-sm-5 me-1"></i>
+                        <p style="border: 1px solid black; margin: auto 0" class="me-sm-1 me-0">2</p>
+                        <p class="me-sm-4 me-1" style="margin: auto 0;">+</p>
+                        <p style="margin: auto 0;" class="me-sm-5 me-1">0</p>
+                        <p class="me-sm-3 me-1" style="font-weight: bold; margin: auto 0;">$ 300</p>
+                    </div>
+                </div>
+                <div class="container bg-white p2 d-flex px-4">
+                    <div class="col-6 d-flex">
+                        <img style="max-width: 50%;" src="./images/zed1.jpg" class="img-fluid" alt="...">
+                        <div style="margin:auto 0" class="col">
+                            <p style="color: rgb(168, 135, 135);" class="my-4">Denin Tshirt Black</p>
+                            <p style="font-weight: normal;" class="my-0">12 x 5N</p>
+                            <p style="font-weight: bold;">$8.80</p>
+                        </div>
+                    </div>
+                    <div style="margin: auto 0;" class="col-6 d-flex justify-content-end">
+                        <i style="font-size: 1.5em;" class="bi bi-trash me-sm-5 me-1"></i>
+                        <p style="border: 1px solid black; margin: auto 0" class="me-sm-1 me-0">2</p>
+                        <p class="me-sm-4 me-1" style="margin: auto 0;">+</p>
+                        <p style="margin: auto 0;" class="me-sm-5 me-1">0</p>
+                        <p class="me-sm-3 me-1" style="font-weight: bold; margin: auto 0;">$ 300</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3">
+                    <button type="button" class="btn btn-secondary">
+                        <div class="d-flex">
+                            <i class="bi bi-arrow-left me-1"></i>
+                            Continue Shopping
+                        </div>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <div class="d-flex">
+                            <i class="bi bi-arrow-clockwise me-1"></i>
+                            Update Cart
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <button type="button" class="btn btn-success mb-3 col-12">
+                    <div class="d-flex justify-content-center">
+                        <p class="me-2" style="margin: auto 0;">Processd To Checkout</p>
+                        <i style="margin: auto 0;" class="bi bi-arrow-bar-right"></i>
+                    </div>
+                </button>
+                <div class="container-fluid p-2 bg-white">
+                    <div style="border-bottom: 1px solid grey;" class="d-flex justify-content-between">
+                        <p>Total products</p>
+                        <p style="font-weight: bold;">$ 333</p>
+                    </div>
+                    <div style="border-bottom: 1px solid grey;" class="d-flex justify-content-between">
+                        <p>Total products</p>
+                        <p  style="font-weight: bold; color:#4ec67f">$ 333</p>
+                    </div>
+                    <div style="border-bottom: 1px solid grey;" class="d-flex justify-content-between">
+                        <p>Total products</p>
+                        <p style="font-weight: bold;">$ 333</p>
+                    </div>
+                    <div style="border-bottom: 1px solid grey;" class="d-flex justify-content-between">
+                        <p>Total products</p>
+                        <p style="font-weight: bold; color:#4ec67f">$ 333</p>
+                    </div>
+                    <div style="border-bottom: 1px solid grey;" class="d-flex justify-content-between">
+                        <p>Total products</p>
+                        <p style="font-weight: bold; color:#8be60c"">$ 333</p>
+                    </div>
+                    <div class="d-flex my-3">
+                        <input style="border: #4ec67f; padding: 0 5%;" class="col-8" type="text" placeholder="Conpon code" name="" id="">
+                        <button type="button" class="btn btn-success col-4">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="font-size: 0.7em;" class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-2">
+                <div style="font-weight: bold; border-bottom: 1px solid black;" class="container-fluid my-4">
+                    SUPPORT
+                </div>
+                <p class="my-1">Lorem maybe you can do it</p>
+                <p class="my-1" style="font-weight: bold; word-wrap: break-word;">+08975827424</p>
+                <div style="word-wrap: break-word;" class="d-flex">
+                    <i class="bi bi-envelope me-1"></i>
+                    <p style="word-wrap: break-word; overflow: hidden;">abxejff@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="font-weight: bold; border-bottom: 1px solid black;" class="container-fluid my-4">
+                    SHOP
+                </div>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p>do know</p>
+            </div>
+            <div class="col-2">
+                <div style="font-weight: bold; border-bottom: 1px solid black;" class="container-fluid my-4">
+                    INFORMATION
+                </div>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p>do know</p>
+            </div>
+            <div class="col-2">
+                <div style="font-weight: bold; border-bottom: 1px solid black;" class="container-fluid my-4">
+                    MY ACCOUNT
+                </div>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p class="my-1">do know</p>
+                <p>do know</p>
+            </div>
+            <div class="col-2">
+                <div style="font-weight: bold; border-bottom: 1px solid black;" class="container-fluid my-4">
+                    STAY IN TOUCH
+                </div>
+                <input style="font-size: 0.6em;" class="form-control d-flex text-center my-3 text-success" type="text"
+                    placeholder="Email" readonly>
+                <button style="width: 100%; font-size: 0.6em;" class="btn btn-success">
+                    <div class="d-flex justify-content-center">
+                        SUBCRIBE
+                        <i class="bi bi-arrow-right-short"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #f9f9f9;" class="col-12">
+        <div class="d-flex justify-content-between">
+            <div style="margin:auto 0" class="container-fluid">
+                @Copyright by Long
+            </div>
+            <div class="d-flex justify-content-end">
+                <img src="./images/zed2.jpg" class="rounded" alt="Cinque Terre" width="7%">
+                <img src="./images/zed2.jpg" class="rounded" alt="Cinque Terre" width="7%">
+                <img src="./images/zed2.jpg" class="rounded" alt="Cinque Terre" width="7%">
+                <img src="./images/zed2.jpg" class="rounded" alt="Cinque Terre" width="7%">
+                <img src="./images/zed2.jpg" class="rounded" alt="Cinque Terre" width="7%">
+                <img src="./images/zed2.jpg" class="rounded" alt="Cinque Terre" width="7%">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
